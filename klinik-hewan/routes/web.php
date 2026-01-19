@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PetController;
 use App\Http\Controllers\OwnerController;
+use App\Http\Controllers\CheckupController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\TreatementController;
@@ -17,5 +18,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('owners', OwnerController::class);
     Route::resource('pets', PetController::class);
     Route::resource('treatements', TreatementController::class);
+    Route::resource('checkups', CheckupController::class);
 });
 

@@ -22,5 +22,10 @@
                 Treatments
             </a>
         </li>
+        <li class="nav-item">
+            <a href="/checkups" class="nav-link text-white {{ Request::is("checkups*") ? "bg-primary rounded" : "" }}">
+                Checkups
+            </a>
+        </li>
     </ul>
 </div>

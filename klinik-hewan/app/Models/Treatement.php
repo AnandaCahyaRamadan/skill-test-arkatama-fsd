@@ -20,7 +20,7 @@ public function pet()
 
     public function checkup()
     {
-        return $this->hasOne(Pet::class);
+        return $this->hasOne(Checkup::class, 'tratement_id');
     }
     
 }
